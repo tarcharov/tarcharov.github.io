@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переключение разделов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link active" data-target="section1">Раздел 1</a></li>
+            <li><a href="#" class="nav-link" data-target="section2">Раздел 2</a></li>
+            <li><a href="#" class="nav-link" data-target="section3">Раздел 3</a></li>
+            <li><a href="#" class="nav-link" data-target="section4">Раздел 4</a></li>
+        </ul>
+    </nav>
+
+    <!-- Разделы страницы -->
+    <div class="content">
+        <section id="section1" class="active-section">
+            <h2>Раздел 1</h2>
+            <p>Содержание первого раздела.</p>
+        </section>
+        <section id="section2">
+            <h2>Раздел 2</h2>
+            <p>Содержание второго раздела.</p>
+        </section>
+        <section id="section3">
+            <h2>Раздел 3</h2>
+            <p>Содержание третьего раздела.</p>
+        </section>
+        <section id="section4">
+            <h2>Раздел 4</h2>
+            <p>Содержание четвертого раздела.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
