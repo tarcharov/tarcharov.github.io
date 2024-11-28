@@ -27,22 +27,52 @@
 
     <main>
         <section id="section1" class="active-section">
-            <h2>Уровни воды на Северо-западе РФ</h2>
+            <h2>Изменение уровней воды на Северо-западе РФ на 2 декабря</h2>
             <div class="map-container">
-                <img src="map.jpg" alt="Карта уровней воды">
+                <img src="uroveni.jpg" alt="Карта уровней воды">
             </div>
         </section>
         <section id="section2">
-            <h2>Раздел 2</h2>
-            <p>Содержание второго раздела.</p>
+            <h2>Используемые посты</h1>
+            <div class="map-container">
+                <ul>
+                    <li>р. Луга - г. Луга</li>
+                    <li>р. Луга - ст. Толмачёво</li>
+                    <li>р. Оредеж - пгт. Вырица</li>
+                    <li>р. Оредеж - д. Чикино</li>
+                    <li>р. Орлинка - уроч. Орлинка</li>
+                    <li>р. Ящера - д. Долговк</li>
+                </ul>
+            </div>
         </section>
         <section id="section3">
-            <h2>Раздел 3</h2>
-            <p>Содержание третьего раздела.</p>
+            <h2>Метеостанции района:</h2>
+            <div class="map-container">
+                <ul>
+                    <li>м/с Белогорка</li>
+                    <li>м/с Николаевское</li>
+                    <li>м/с Любань</li>
+                    <li>м/с Кингисепп</li>
+                </ul>
+            </div>
         </section>
         <section id="section4">
-            <h2>Раздел 4</h2>
-            <p>Содержание четвертого раздела.</p>
+            <h2>Изменение уровней воды на Северо-западе РФ</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="archive.jpg" class="clickable">
+                    <div class="item-text">1 декабря</div>
+                </div>
+                <div class="gallery-item empty"></div>
+                <div class="gallery-item empty"></div>
+            </div>
+            <!-- Модальное окно -->
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <button class="close-button" id="closeButton">&times;</button>
+                    <img src="" alt="Увеличенное изображение" id="modalImage">
+                </div>
+            </div>
         </section>
     </main>
     <script src="script.js"></script>

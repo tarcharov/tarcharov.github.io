@@ -38,3 +38,28 @@ document.addEventListener('DOMContentLoaded', () => {
     activateSection('section1');
 });
 
+// Элементы для работы с модальным окном
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modalImage');
+const closeButton = document.getElementById('closeButton');
+const clickableImages = document.querySelectorAll('.clickable');
+
+// Открытие модального окна при клике на изображение
+clickableImages.forEach(image => {
+    image.addEventListener('click', () => {
+        modalImage.src = image.src; // Устанавливаем источник картинки
+        modal.classList.add('open'); // Показываем модальное окно
+    });
+});
+
+// Закрытие модального окна при клике на кнопку "Закрыть"
+closeButton.addEventListener('click', () => {
+    modal.classList.remove('open'); // Скрываем модальное окно
+});
+
+// Закрытие модального окна при клике вне контента
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.classList.remove('open');
+    }
+});
